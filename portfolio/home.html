@@ -7,12 +7,63 @@
 
     <style>
         /* CSS */
+        /* Read more about units, shorthands */
+
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+
+        header, footer {
+            background-color: lightgray;
+        }
+
+        header, main, footer {
+            padding: 24px;
+            /* padding-top: 10px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+            padding-right: 20px; */
+        }
+
+        header * {
+            vertical-align: middle;
+        }
+
+        header img {
+            margin-right: 10px;
+        }
+
+        header b {
+            color: red;
+        }
+
+        nav {
+            float: right;
+            margin-top: 22px;
+        }
+
+        div {
+            /* border-width: 2px;
+            border-style: dotted;
+            border-color: blueviolet; */
+            border: 2px solid violet;
+            display: inline-block;
+            margin: 0 20px 28px 0;
+        }
+
+        div h3 {
+            margin: 8px 0;
+            padding: 0 20px;
+        }
+
+        /* BOX MODEL */
     </style>
 
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <header style="/* CSS */">
+    <header style="">
       <img src="images/bird.jpg" alt="Logo" height="64" />
       <b>JULIET</b>
 
@@ -37,23 +88,17 @@
       <h2>MY SELECTED WORK</h2>
       <div>
         <img src="images/work1.jpg" alt="Featured Work 1">
-        <p>
-            <h3>Web Design 1</h3>
-        </p>
+        <h3>Web Design 1</h3>
+      </div>
+      
+      <div>
+        <img src="images/work1.jpg" alt="Featured Work 1">
+        <h3>Logo 1</h3>
       </div>
 
       <div>
         <img src="images/work1.jpg" alt="Featured Work 1">
-        <p>
-            <h3>Logo 1</h3>
-        </p>
-      </div>
-
-      <div>
-        <img src="images/work1.jpg" alt="Featured Work 1">
-        <p>
-            <h3>E-Commerce Site 1</h3>
-        </p>
+        <h3>E-Commerce Site 1</h3>
       </div>
     </main>
 
