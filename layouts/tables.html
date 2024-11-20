@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <h1>TABLES</h1>
+
+    <table border="1" cellspacing="0" cellpadding="10" width="100%">
+        <tr>
+            <td width="130">Cell 1</td>
+            <td width="*">Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+        <tr>
+            <td>Cell 21</td>
+            <td>Cell 22</td>
+            <td width="200">Cell 23</td>
+        </tr>
+        <tr>
+            <td colspan="2">Cell 31</td>
+            
+            <td rowspan="2">Cell 33</td>
+        </tr>
+        <tr>
+            <td>Cell 41</td>
+            <td>Cell 42</td>
+            
+        </tr>
+    </table>
+
+
+    <h2>Merging</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr height="150">
+            <td colspan="3" bgcolor="#FFCC00">1</td>
+            
+            <td valign="bottom">4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td rowspan="2" valign="top" bgcolor="cyan">7</td>
+            <td>8</td>
+            <td colspan="2" rowspan="2" bgcolor="lightgreen">9</td>
+            
+        </tr>
+        <tr>
+            <td>11</td>
+            
+            <td>13</td>
+            
+        </tr>
+    </table>
+</body>
+</html>
