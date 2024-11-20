@@ -40,7 +40,7 @@
 
         nav {
             float: right;
-            margin-top: 22px;
+            margin-top: 10px;
         }
 
         div {
@@ -70,6 +70,25 @@
           border: 1px solid gray;
           border-radius: 10px;
         }
+
+        nav a:hover {
+          color: blue;
+          background-color: yellow;
+        }
+
+        /* Element with id="brand" */
+        #brand {
+          color: violet;
+          font-size: xx-large;
+        }
+
+        /* Elements with class="active" */
+        .active {
+          color: white;
+          background-color: blue;
+        }
+
+
     </style>
 
     <link rel="stylesheet" href="styles/main.css">
@@ -77,10 +96,10 @@
   <body>
     <header style="">
       <img src="images/bird.jpg" alt="Logo" height="64" />
-      <b>JULIET</b>
+      <b id="brand">JULIET</b>
 
       <nav>
-        <a href="#">Home</a>
+        <a href="#" class="active">Home</a>
         <a href="#">My Works</a>
         <a href="#">About Me</a>
       </nav>
