@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 2</title>
+  </head>
+  <body>
+    <!-- table > tr > td > Content -->
+
+    <h2>Nested Tables</h2>
+    
+    <table border="1" cellspacing="0" width="100%">
+      <tr bgcolor="lightgray">
+        <td>
+          <!-- Nested Table -->
+          <table border="1" cellspacing="0" width="100%">
+            <tr>
+              <td width="60" bgcolor="darkgreen">LOGO</td>
+              <td width="*">Company Name</td>
+              <td width="130" bgcolor="blue" align="center">
+                <font color="white">Home</font>
+              </td>
+              <td width="130" bgcolor="cyan" align="center">
+                Products/Services
+              </td>
+              <td width="130" bgcolor="cyan" align="center">About Us</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h1>Welcome!</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio natus
+            dolores ducimus in fuga rerum debitis magni suscipit illum nobis,
+            recusandae facere rem blanditiis fugiat, voluptas quis
+            necessitatibus libero ipsa.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>Copyright &copy; 2024 by Me. All rights reserved.</td>
+      </tr>
+    </table>
+
+    <h2>One Table for All</h2>
+
+    <table border="1" cellspacing="0" width="100%">
+      <tr>
+        <td width="60" bgcolor="darkgreen">LOGO</td>
+        <td width="*">Company Name</td>
+        <td width="130" bgcolor="blue" align="center">
+          <font color="white">Home</font>
+        </td>
+        <td width="130" bgcolor="cyan" align="center">Products/Services</td>
+        <td width="130" bgcolor="cyan" align="center">About Us</td>
+      </tr>
+      <tr>
+        <td colspan="5">
+          <h1>Welcome!</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio natus
+            dolores ducimus in fuga rerum debitis magni suscipit illum nobis,
+            recusandae facere rem blanditiis fugiat, voluptas quis
+            necessitatibus libero ipsa.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5">
+            Copyright &copy; 2024 by Me. All rights reserved.
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
