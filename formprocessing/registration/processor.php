@@ -45,6 +45,10 @@
                 </td>
             </tr>
             <tr>
+                <td>Civil Status:</td>
+                <td><?= '' ?></td>
+            </tr>
+            <tr>
                 <td>Hobbies</td>
                 <td>
                     <?php

@@ -28,14 +28,23 @@
         <input type="radio" name="gender" id="genderF" value="F"> <label for="genderF">Female</label>
         <br>
 
+        <label for="civilStatus">Civil Status:</label>
+        <select name="civilStatus" id="civilStatus">
+            <option value="S">Single</option>
+        </select>
+        <br>
+
+
         <label>Hobbies</label>
         <input type="checkbox" name="hobby[]" value="S" id="hobby1"> <label for="hobby1">Singing</label>
         <input type="checkbox" name="hobby[]" value="D" id="hobby2"> <label for="hobby2">Dancing</label>
         <input type="checkbox" name="hobby[]" value="R" id="hobby3"> <label for="hobby3">Reading</label>
+        <br>
 
         <label>Terms</label>
         <input type="radio" name="agreed" id="agreedY" value="Y"> <label for="agreedY">Yes</label>
         <input type="radio" name="agreed" id="agreedN" value="N"> <label for="agreedN">No</label>
+        <br>
         
         <label></label>
         <button>Register Now</button>
