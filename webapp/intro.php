@@ -40,7 +40,7 @@
     $b = 4;        // User Input, Output of other Processes
     $c = $a % $b;  // 10 % 4 = 2 remainder 2 ==> 2
     echo "<br>c = $c";
-    // Conditional Logical:  == != < <= > >= (true or false)
+    // Conditional/Logical:  == != < <= > >= (true or false)
     echo "<br>Test 1 ? " . (1 == 1);
     echo "<br>Test 2 ? " . (1 > 1);
     echo "<br>Test 3 ? " . (1 != 1);
