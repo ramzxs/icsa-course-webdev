@@ -46,7 +46,13 @@
             </tr>
             <tr>
                 <td>Civil Status:</td>
-                <td><?= '' ?></td>
+                <td><?php
+                     switch ($_REQUEST['civilStatus']) {
+                        case 'S': echo 'Single<br>'; break;
+                        case 'M': echo 'Married<br>'; break;
+                        case 'D': echo 'Divorced<br>'; break;
+                        case 'W': echo 'Widow/Widower<br>'; break;
+                    } ?></td>
             </tr>
             <tr>
                 <td>Hobbies</td>

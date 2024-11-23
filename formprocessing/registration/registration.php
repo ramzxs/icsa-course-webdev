@@ -18,7 +18,8 @@
 
     <form action="processor.php" method="post">
         <label for="fullname">Name:</label>
-        <input type="text" name="fullname" id="fullname" required> <br>
+        <input type="text" name="fullname" id="fullname"
+            required value="Test" placeholder="Surname, First, Middle"> <br>
 
         <label for="dob">Birthdate:</label>
         <input type="date" name="dob" id="dob"> <br>
@@ -31,6 +32,9 @@
         <label for="civilStatus">Civil Status:</label>
         <select name="civilStatus" id="civilStatus">
             <option value="S">Single</option>
+            <option value="M">Married</option>
+            <option value="D">Divorced</option>
+            <option value="W">Widow/Widower</option>
         </select>
         <br>
 
