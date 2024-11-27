@@ -3,16 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro to PHP</title>
+    <title>PHP Basics</title>
 </head>
 <body>
-    <h1>Intro to PHP</h1>
-
-    <p>Static message</p>
-
-    <?php
-    echo "String literal"; // String Constant ('' or "")
-    ?>
+    <h1>PHP Basics</h1>
 
     <?php
     /**
@@ -31,7 +25,16 @@
     $f = 1.2345;        // Floating-Point Numbers
     $c = "C";           // String
     $s = 'String';
-    $b = true;          // Boolean (true or false; true == "1", false == "")
+    $b = true;          // Boolean (true or false)
+                        // !true  = false
+                        // !false = true
+                        // Boolean true  = String "1"
+                        // Boolean false = String ""
+                        // Non-Empty String (" ") = Boolean true
+                        // Empty String ("") = Boolean false
+                        // Non-Zero Number (1) = Boolean true
+                        // Zero Number (0)     = Boolean false
+                        
     // Loosely-Typed
     $i = 'Integer';
 
@@ -55,7 +58,10 @@
     echo "<br>Test 3 ? " . (1 != 1); // ""
     // (d) Tertiary Operator: ?:
     echo "<br>Test 4 ? " . ((10 <= 10) ? 'True' : 'No');
-    // (e) Unary Operators: ++ (Increment) -- (Decrement)
+    // (e) Unary Operators:
+    //     ++ (Increment)
+    //     -- (Decrement)
+    //     ! (Logical Not)
     $a = 3;
     $a++; // Add 1 to the old value; $a = 4
     echo "<br>a = " . $a++; // Retrieve/use 4; then add 1; $a = 5 
