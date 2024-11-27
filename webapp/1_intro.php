@@ -8,6 +8,10 @@
 <body>
     <h1>Intro to PHP</h1>
 
+    <p>I would call it only a website if it only has HTML, CSS and JavaScript files.</p>
+
+    <p>Web apps are those sites with more advanced features/functionalities written using programming languages like PHP.</p>
+
     <p>Static message</p>
 
     <br>String literal 1
@@ -20,5 +24,10 @@
     ?>
 
     <?= "<br>String constant 2" // echo Shortcut ?>
+
+    <?php
+    /* If all you have are static HTML, CSS and JS code,
+    then you don't even need to save this file as .php,
+    just save this as .html file. */ ?>
 </body>
 </html>
