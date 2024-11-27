@@ -38,7 +38,7 @@
     <h2>for</h2>
     <?php
     // 3. for LOOP
-    for ($a = 1; $a <= 5; $a++) { // initialization; checking; updating
+    for ($a = 1; $a <= 5; $a++) { // initialization => { checking => statements => updating } *
         echo "$a<br>";
     }
     ?>
