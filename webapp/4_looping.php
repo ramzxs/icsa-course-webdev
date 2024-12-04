@@ -56,9 +56,26 @@
     // ****
     // *****
     $n = 5;
-    // Branching Statements?
     // Looping Statements?
-    // Nested Loops (Loops within Loops)?
+        // Branching Statements?
+        // Nested Loops (Loops within Loops)?
+    
+    // i ---> n
+    // j ---> i
+
+    // i
+    // 1  *       2
+    // 2  **      3
+    // 3  ***     4
+    // 4  ****    5
+    // 5  *****   6 (n)
+    //    j 1..$i
+    for ($i = 1; $i <= $n; $i++) {
+        for ($j = 1; $j <= $i; $j++) {
+            echo '*';
+        }
+        echo '<br>';
+    }
     ?>
 
 
@@ -67,14 +84,56 @@
     // CHALLENGE 2
     // Given n = 7
     // Output:
-    // *******
-    // ******
-    // *****
-    // ****
-    // ***
-    // **
-    // *
+    // 0 n-i=7 *******
+    // 1 n-i=6 ******
+    // 2 n-i=5 *****
+    // 3 n-i=4 ****
+    // 4 n-i=3 ***
+    // 5 n-i=2 **
+    // 6 n-i=1 *
     $n = 7;
+    for ($i = 0; $i < $n; $i++) {
+        for ($j = 1; $j <= $n-$i; $j++) {
+            echo '*';
+        }
+        echo "<br>";
+    }
+    echo '<hr>';
+    
+    // i
+    // 7
+    // 6
+    // 5
+    // 4
+    // 3
+    // 2
+    // 1
+    for ($i = $n; $i > 0; $i--) {
+        for ($j = 1; $j <= $i; $j++) {
+            echo '*';
+        }
+        echo "<br>";
+    }
+
+    // CHALLENGE
+    // CHRISTMAS TREE
+    $n = 11;
+    //      *
+    //     ***
+    //    *****
+    //   *******
+    //  *********
+    // ***********
+
+
+    // CHALLENGE
+    // DIAMOND
+    $n = 5;
+    //      *
+    //     ***
+    //    *****
+    //     ***
+    //      *
     ?>
 </body>
 </html>
