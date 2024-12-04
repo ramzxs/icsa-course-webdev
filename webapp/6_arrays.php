@@ -45,6 +45,23 @@
 
 
     // CHALLENGE
+    $sales = [100, 150, 90, 175, 200, 215, 230, 245, 250];
+
+    echo '<hr>';
+    $totalSales = 0;
+    for ($i = 0; $i < count($sales); $i++) {
+        $totalSales += $sales[$i];
+    }
+    echo "Total Sales: <b>$totalSales</b><br>";
+
+    echo '<hr>';
+    $averageSale = 0;
+
+    echo '<hr>';
+    $min = 0;
+
+    echo '<hr>';
+    $max = 0;
     ?>
 </body>
 </html>
