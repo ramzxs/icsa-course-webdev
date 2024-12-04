@@ -123,7 +123,8 @@ printBottom();
 function generateBits($N) {
     $str = "";
     for ($i = 1; $i <= $N; $i++) {
-        $str = $str . rand(0, 1); // . = String concatenation operator
+        // $str = $str . rand(0, 1); // . = String concatenation operator
+        $str .= rand(0, 1);
     }
     return $str;
 }
