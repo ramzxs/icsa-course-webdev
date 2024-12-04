@@ -2,6 +2,20 @@
 // PHP
 
 // PROCEDURAL PROGRAMMING
+/*
+process1();
+process2();
+step1();
+step2();
+step3();
+*/
+
+// OBJECTED-ORIENTED PROGRAMMING
+/*
+Object1.step1();
+Object1.step2();
+Object2.process1();
+Object2.process2(); */
 
 
 /*
@@ -100,18 +114,25 @@ echo "Sum: " . $sum;
 printBottom();
 
 
-// OBJECTED-ORIENTED PROGRAMMING
-/*
-Object1.step1();
-Object1.step2();
-Object2.process1();
-Object2.process2(); */
-
 
 // Create a function that generates random N-long string of 0s and 1s
 // Digits: 0, 1
 // N: Total number of 0s and 1s
 // Example: N = 6; RandomString = 010111
-// Hints:
-// for(1 .. N)
-//    rand()
+
+function generateBits($N) {
+    $str = "";
+    for ($i = 1; $i <= $N; $i++) {
+        $str = $str . rand(0, 1); // . = String concatenation operator
+    }
+    return $str;
+}
+
+echo '<hr>';
+$randBits = generateBits(8);
+
+?>
+
+<div style="background-color: yellow; color: red; font-size: 32pt; font-family: monospace; text-align: center">
+    <?= $randBits ?>
+</div>
