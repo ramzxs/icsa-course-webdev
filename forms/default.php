@@ -11,47 +11,46 @@
     <!-- action = backend script processor (? = itself) -->
     <!-- method = GET (Key-Value pairs are visible in the URL) or POST (Invisible payload) -->
     <form action="script.php" method="GET" onsubmit="return validateForm()">
-        <input name="fullname" id="fullname"
-            type="text" placeholder="Surname, Given Name, Middle Name"
+        <input name="fullname" id="fullname" type="text"
+            value="Default"
+            placeholder="Surname, Given Name, Middle Name"
             size="50"   >
         
-        <br>
-        <input type="email">
+        <br> <input type="email">
 
-        <br>
-        <input type="password">
+        <br> <input type="password">
 
-        <br>
-        <input type="number" step="0.01">
+        <br> <input type="number" step="0.01" value="123.56">
 
-        <br>
-        <input type="date">
+        <br> input type="date">
 
-        <br>
-        Favorite subjects: <br>
+        <br> Favorite subjects: <br>
         <input type="checkbox"> Science <br>
         <input type="checkbox"> Technology <br>
         <input type="checkbox"> English <br>
         <input type="checkbox"> Mathematics <br>
 
-        <br>
-        Gender: <br>
+        <br> Gender: <br>
         <input type="radio" name="g"> Male <br>
         <input type="radio" name="g"> Female <br>
 
-        <br>
-        Civil Status: <br>
+        <br> Civil Status: <br>
         <input type="radio" name="cs"> Single <br>
         <input type="radio" name="cs"> Married <br>
         <input type="radio" name="cs"> Divorced <br>
         <input type="radio" name="cs"> Widow/Widower
-
         
         <br>
-        <button>Send Now</button>
+        <br> <button>Send Now</button>
+        <br> <button type="reset">Reset</button>
+        <br> <button type="button" onclick="doSomething()">Extra</button>
     </form>
 
     <script>
+        function doSomething() {
+            alert('Do Something');
+        }
+
         function validateForm() {
             const fullname = document.getElementById('fullname').value;
             if (fullname.trim() == "") {

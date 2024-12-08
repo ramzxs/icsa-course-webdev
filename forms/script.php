@@ -1,6 +1,6 @@
 <?php
-// URL using GET:   http://localhost/icsa-course-webdev/forms/script.php?fullname=Ramz
-//                  http://localhost/icsa-course-webdev/forms/script.php?fullname=
+// URL using GET:   http://localhost/icsa-course-webdev/forms/script.php?fullname=
+//                  http://localhost/icsa-course-webdev/forms/script.php?fullname=Test
 // URL using POST:  http://localhost/icsa-course-webdev/forms/script.php
 
 // 3 Arrays that hold Form Data:
