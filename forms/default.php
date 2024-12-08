@@ -22,8 +22,9 @@
 
         <br> <input type="number" step="0.01" value="123.56">
 
-        <br> input type="date">
+        <br> <input type="date">
 
+        <br>
         <br> Favorite subjects: <br>
         <input type="checkbox"> Science <br>
         <input type="checkbox"> Technology <br>
