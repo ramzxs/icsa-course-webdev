@@ -8,7 +8,7 @@
 <body>
     <h1>HTML 5 FORMS</h1>
 
-    <!-- action: backend processor script (or ? for itself) -->
+    <!-- action: Backend processor script (Blank, ? or # for itself) -->
     <!-- method: GET (Key-Value pairs are visible in the URL) or POST (Invisible payload) -->
     <form action="script.php" method="GET" onsubmit="return validateForm()">
         <!-- for: Equal to the id of another control -->
