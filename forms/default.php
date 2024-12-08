@@ -8,9 +8,11 @@
 <body>
     <h1>HTML 5 FORMS</h1>
 
-    <!-- action = backend script processor (? = itself) -->
-    <!-- method = GET (Key-Value pairs are visible in the URL) or POST (Invisible payload) -->
+    <!-- action: backend processor script (or ? for itself) -->
+    <!-- method: GET (Key-Value pairs are visible in the URL) or POST (Invisible payload) -->
     <form action="script.php" method="GET" onsubmit="return validateForm()">
+        <!-- for: Equal to the id of another control -->
+        <label for="fullname">Full Name:</label>
         <input name="fullname" id="fullname" type="text"
             value="Default"
             placeholder="Surname, Given Name, Middle Name"
@@ -25,11 +27,11 @@
         <br> <input type="date">
 
         <br>
-        <br> Favorite subjects: <br>
-        <input type="checkbox"> Science <br>
-        <input type="checkbox"> Technology <br>
-        <input type="checkbox"> English <br>
-        <input type="checkbox"> Mathematics <br>
+        <br> Favorite subject(s): <br>
+        <input type="checkbox" id="subjS"> <label for="subjS">Science</label> <br>
+        <input type="checkbox" id="subjT"> <label for="subjT">Technology</label> <br>
+        <input type="checkbox" id="subjE"> <label for="subjE">English</label> <br>
+        <input type="checkbox" id="subjM"> <label for="subjM">Mathematics</label> <br>
 
         <br> Gender: <br>
         <input type="radio" name="g"> Male <br>

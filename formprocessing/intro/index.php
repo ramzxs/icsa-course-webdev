@@ -15,11 +15,11 @@
     <!-- Method: GET (data are visible in the URL), POST (payload is hidden) -->
     <!-- Key-Value Pair -->
     <form action="processor.php" method="post">
-        <input type="text" name="user"> <br>
+        Name: <input type="text" name="name"> <br>
 
-        <input type="password" name="pass"> <br>
+        Password: <input type="password" name="pass"> <br>
 
-        <input type="number" name="age" value="18"> <br>
+        Age: <input type="number" name="age" value="18"> <br>
 
         <button>Submit</button>
     </form>
