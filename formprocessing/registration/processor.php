@@ -12,6 +12,10 @@
     <h1>REGISTRATION PROCESSING</h1>
 
     <?php
+    print_r($_REQUEST);
+    echo '<hr><br>';
+
+
     if ( isset($_POST['fullname']) ) { ?>
 
         <table border="1" cellspacing="0" cellpadding="10">
@@ -28,8 +32,8 @@
                 <td><?php
                 $date1 = date_create(date('Y-m-d'));
                 $date2 = date_create($_POST['dob']);
-                $diff = date_diff($date1,$date2);
-                echo $diff->format("%y").' years old';
+                $diff  = date_diff($date1,$date2);
+                echo $diff->format("%y").' year(s) old';
                 ?></td>
             </tr>
             <tr>
@@ -60,6 +64,7 @@
                 <td>
                     <?php
                     if (isset($_REQUEST['hobby'])) {
+                        // Checkboxes are sent as an array
                         // print_r($_REQUEST['hobby']);
                         // echo '<br>';
                         // foreach ($arrayName as $keyName => $valueName) {}

@@ -20,8 +20,8 @@
     <h1>REGISTRATION FORM</h1>
 
     <form action="processor.php" method="post">
-        <label for="fullname">Name:</label>
-        <input type="text" name="fullname" id="fullname"
+        <label for="fullname1">Name:</label>
+        <input type="text" name="fullname" id="fullname1"
             required value="Test" placeholder="Surname, First, Middle"> <br>
 
         <label for="dob">Birthdate:</label>
